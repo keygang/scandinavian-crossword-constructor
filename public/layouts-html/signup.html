@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <header class="header-class">
+        <h1 class="header-title">
+            Scandinavian crossword
+        </h1>
+        <div class="managment-buttons">
+            <a href="login.html">Log in</a>
+            <a href="signup.html">Sign up</a>
+        </div>
+    </header>
+    <main>
+        <div class="user-operations sign-up">
+            <h1>Sing up please</h1>
+            <form onsubmit="signUp()">
+                <div class="field">
+                    <label for="email">email:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="field">
+                    <label for="password">password:</label>
+                    <input type="password" id="password">
+                </div>
+
+                <div class="submit-container">
+                    <input type="submit" value="sign up">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer-class">
+        <p>Stas Bokun - the genius of design and layout</p>
+    </footer>
+
+    <script src="../scripts/signup.js"></script>
+</body>
+</html>
