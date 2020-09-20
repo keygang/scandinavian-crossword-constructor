@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <header class="header-class">
+        <h1 class="header-title">
+            Create crossword
+        </h1>
+        <div class="managment-buttons">
+            <a href="creater.html">Create crossword</a>
+            <a href="solve.html">Solve crossword</a>
+            <a href="">Log out</a>
+        </div>
+    </header>
+    <main class="creater">
+        <div>
+            <div class="instruction">
+                <h1>Instruction</h1>
+                <p>
+                    Instruction...
+                </p>
+            </div>
+            <div class="grid">
+                <form action="">
+                    <table class="crossword">
+                        <caption><h2>Some crossword</h2></caption>
+                        <tbody>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="settings">
+                <h1>Settings</h1>
+
+                <div class="field">
+                    <div class="label">
+                        <label for="name">Name of crossword</label>
+                    </div>
+                    
+                    <input type="text" id="name" onkeyup="crossword_name_change()">
+                </div>
+                
+                <div class="field">
+                    <div class="label">
+                        <label for="rows">Rows number</label>
+                    </div>
+                    
+                    <input type="number" value=4 max="10" min="4" id="rows" onchange="rows_change(value)">
+                </div>
+                
+                <div class="field">
+                    <div class="label">
+                        <label for="columns">Columns number</label>
+                    </div>
+                    
+                    <input type="number" value=4 max="15" min="4" id="columns" onchange="columns_change(value)">
+                </div>
+                
+                <div class="field">
+                    <div class="label">
+                        <label for="answer">Enter answer</label>
+                    </div>
+                    
+                    <input type="text" id="answer" maxlength="0" onkeyup="handleAnswerChange(this)">
+                </div>
+                
+                <div class="field question">
+                    <div class="label">
+                        <label for="question">Enter question</label>
+                    </div>
+                    
+                    <textarea name="question" id="question" cols="30" rows="10"></textarea>
+                </div>
+                
+                <input type="submit" value="Submit solve"/>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-class">
+        <p>Stas Bokun - the genius of design and layout</p>
+    </footer>
+    <script src="../scripts/creater.js"></script>
+</body>
+</html>
